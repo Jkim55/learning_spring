@@ -36,9 +36,13 @@ se templates
     - Spring Boot automatically secures all HTTP endpoints with "basic" authentication; the security settings can be customized
     - The configure(HttpSecurity) method defines which URL paths should be secured and which should not
 - @Autowired
+    - applied on fields, setter methods, and constructors
+    - injects object dependency implicitly. 
+    - When you use @Autowired on fields and pass the values for the fields using the property name, Spring will automatically assign the fields with the passed values.
+
 - More on[Spring Security Architecture](https://spring.io/guides/topicals/spring-security-architecture/) - For more details on Spring Security
     
     
 #### MvcConfig.java
-- @Override
+- @Override: informs the compiler that the element is meant to override an element declared in a superclass. 
 
