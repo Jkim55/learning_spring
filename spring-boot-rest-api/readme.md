@@ -1,5 +1,5 @@
 # Building a RESTful Web Service with Spring Boot
-Based on this[Spring Guide](https://spring.io/guides/gs/rest-service/)
+Based on this [Spring Guide](https://spring.io/guides/gs/rest-service/)
 
 API service that will accept HTTP GET requests at: 
 ```http://localhost:8080/greeting```
@@ -20,11 +20,11 @@ which returns:
     - Select 'Use default gradle wrapper' & 'Create directories for empty content root automatically'
 2. Define a package directory with the source directory
 3. Test and create a resource controller
+   - This is where the Spring Boot magic (not magic; just annotations) happens... 
    - What will your endpoint be? Query params? HTTP verbs?
    - What are your inputs & outputs? And what model objects do you need?
 4. Create a model (aka resource representation class)
    - This is a POJO to represent the resource that will be served up by the controller
-   - This is where the Spring Boot magic (not magic; just annotations) happens...
 5. Create a 'Application' class 
    - This is where the ```main()``` method lives, which creates a single, executable JAR file. 
    - Along the way, you use Spring’s support for embedding the Tomcat servlet container as the HTTP runtime, instead of deploying to an external instance.
